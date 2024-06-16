@@ -1,6 +1,27 @@
 import './App.css';
+import MultipleHooks from './Hooks/MultipleHooks/MultipleHooks';
+import  Formulario from './Hooks/UseEffect/Formulario';
+function App() {
+
+
+
+  return (
+    <div className="App">
+    {/* <Formulario></Formulario> */}
+    <MultipleHooks></MultipleHooks>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+import './App.css';
 import ListaPersonajes from './Hooks/MultipleHooks/ListaPersonajes';
 import MultipleHooks from './Hooks/MultipleHooks/MultipleHooks';
+import  Formulario from './Hooks/UseEffect/Formulario';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
 
@@ -19,7 +40,9 @@ function App() {
 
         </Routes>
       </Router>
-
+    {/* <Formulario></Formulario> */}
+    {/* <MultipleHooks></MultipleHooks> */}
+    {/* <ListaPersonajes></ListaPersonajes> */}
     </div>
   );
 }

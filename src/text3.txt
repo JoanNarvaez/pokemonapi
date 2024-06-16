@@ -1,0 +1,36 @@
+
+import { useState } from 'react';
+import './App.css';
+
+import { ContadorCustom } from './Hooks/UseState/ContadorCustom';
+
+function App() {
+
+const [valorSumar, setvalorSumar]=useState();
+const [valorRestar, setvalorRestar]=useState();
+
+
+
+  return (
+    <div className="App">
+      <input
+      type='number'
+      value={valorSumar}
+      onChange={(e)=>setvalorSumar(Number(e.target.value))}
+      placeholder='Valor Incrementar'
+      ></input>
+
+      <input
+      type='number'
+      value={valorRestar}
+      onChange={(e)=>setvalorRestar(Number(e.target.value))}  
+      placeholder='Valor Decrementar'   
+      ></input>
+   
+      <ContadorCustom valorIncrementar={valorSumar} valorDecrementar={valorRestar} > </ContadorCustom>
+    
+    </div>
+  );
+}
+
+export default App;
